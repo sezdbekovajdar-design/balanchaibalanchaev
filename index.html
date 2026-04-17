@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Phones</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>📱 Top Phones</h1>
+  <input type="text" id="search" placeholder="Поиск...">
+  
+  <div class="actions">
+    <button onclick="toggleTheme()">🌙</button>
+    <div class="cart">🛒 <span id="cart-count">0</span></div>
+  </div>
+</header>
+<div class="slider">
+  <img id="slide" src="">
+</div>
+
+
+<div class="price-filter">
+  <input type="number" id="minPrice" placeholder="Мин цена">
+  <input type="number" id="maxPrice" placeholder="Макс цена">
+  <button onclick="renderPhones()">Фильтр</button>
+</div>
+
+
+<div class="products" id="products"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
